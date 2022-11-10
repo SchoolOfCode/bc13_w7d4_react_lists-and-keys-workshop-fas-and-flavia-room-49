@@ -13,7 +13,15 @@ function Main() {
   <div>
   <main id="main"></main>
   {samplePosts.map( function(array) {
-    return <Post image={array.image.link} postTitle={array.title} author={array.author} key={array.postId}/>
+    return <Post 
+    image={array.image.link} 
+    title={array.title} 
+    date={array.date}
+    text={array.text}
+    author={array.author} 
+    key={array.postId}
+    highlights={array.highlights}
+    />
   })}
   </div>
   );
