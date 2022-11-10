@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import './index.css';
+import "./index.css";
 
 function Post(props) {
-  return <article>{props.postTitle}, {props.author}</article>;
+  return (
+    <article>
+      <img height='40px' width='40px' src={props.image} alt="bird" />,{props.postTitle}, {props.author}, {props.highlights}
+    </article>
+  );
 }
 
 export default Post;
